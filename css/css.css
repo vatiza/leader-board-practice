@@ -103,4 +103,31 @@ height: 104px;
  --------------- */
  /* Mobile device */
 
- 
+ @media screen and (max-width:688px) {
+    .container{
+        width: 100%;
+    }
+    .players, .blogs, .course{
+        grid-template-columns: repeat(1, 1fr);
+        
+    }
+    .player, .blo{
+        flex-direction: column;
+    }
+    .blogs{
+        grid-template-columns: repeat(1, 1fr);
+    }
+ }
+ /* tablet devices */
+ @media  screen and (min-width:688px) and (max-width:992px) {
+.container{
+    width: 100%;
+}
+    .players, .courses{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .blog{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+ }
